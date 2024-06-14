@@ -5,7 +5,7 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 const userName = process.env.USER_NAME;
